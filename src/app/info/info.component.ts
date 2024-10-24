@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
   styleUrl: './info.component.css'
 })
-export class InfoComponent {
+export class InfoComponent implements OnInit {
+  @Input() name!: string;
+  quantity = 0;
+  products: string[] = [];
+  selectedProduct = "Star Wars";
 
+  constructor() { }
+
+  ngOnInit() {
+      this.quantity = 0;
+      this.products = ["Star Wars", "The Empire Strikes Back", "Return of the Jedi"];
+      this.selectedProduct = "Star Wars";
+  }
 }
