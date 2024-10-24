@@ -8,7 +8,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class ShopComponent {
   question = "What's your name?";
-  answer = "Michael Smart";
+  answer = "unknown";
 
 // Initializing a FormGroup to handle form data. The form has a single control named 'answer'.
 appForm = new FormGroup({

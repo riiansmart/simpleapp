@@ -18,4 +18,15 @@ export class InfoComponent implements OnInit {
       this.products = ["Star Wars", "The Empire Strikes Back", "Return of the Jedi"];
       this.selectedProduct = "Star Wars";
   }
+
+  newInfo() {
+    this.quantity = 0;
+    this.products = ["Star Wars", "The Empire Strikes Back", "Return of the Jedi"];
+    this.selectedProduct = "Star Wars";
+    console.log("In newInfo() and resetting Info")
+  }
+
+  onSubmit() {
+    console.log("In onSubmit() with quantity of " + this.quantity + " and Movie selected is " + this.selectedProduct);
+  }
 }
