@@ -14,9 +14,7 @@ export class InfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-      this.quantity = 0;
-      this.products = ["Star Wars", "The Empire Strikes Back", "Return of the Jedi"];
-      this.selectedProduct = "Star Wars";
+      this.newInfo();
   }
 
   newInfo() {

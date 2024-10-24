@@ -13,3 +13,4 @@
     </form> <br/>
     
     <label>Your name is {{answer}}</label>
+    <app-info [name]="answer" *ngIf="answer !== 'unknown'"></app-info>
